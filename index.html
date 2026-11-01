@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Чистый зуб — стоматология в Бишкеке</title>
+<meta name="description" content="Стоматологическая клиника «Чистый зуб» в Бишкеке. Лечение зубов без боли и стресса. Работаем ежедневно с 6:00 до 23:00.">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&amp;display=swap&amp;subset=cyrillic">
+<style>
+:root{
+  --bg:#FFFFFF; --bg-alt:#F0F8FF; --card:#FFFFFF; --brand:#0077B6; --brand-2:#0096C7; --brand-soft:#DCEFFA;
+  --text:#2B2D42; --muted:#5C6178; --line:#D6E8F3; --star:#FFB703; --on-brand:#FFFFFF;
+  --shadow:0 10px 30px rgba(0,119,182,.10);
+  --safe-top:env(safe-area-inset-top,0px); --safe-bottom:env(safe-area-inset-bottom,0px);
+  box-sizing:border-box; padding-top:var(--safe-top); padding-bottom:var(--safe-bottom);
+  color-scheme:light;
+}
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]){
+    --bg:#0E1A22; --bg-alt:#132531; --card:#172C3A; --brand:#4CC3EE; --brand-2:#7AD3F2; --brand-soft:#1B3A4C;
+    --text:#E8EEF3; --muted:#A2B3C0; --line:#25414F; --on-brand:#06202D; --shadow:0 10px 30px rgba(0,0,0,.35);
+    color-scheme:dark;
+  }
+}
+:root[data-theme="dark"]{
+  --bg:#0E1A22; --bg-alt:#132531; --card:#172C3A; --brand:#4CC3EE; --brand-2:#7AD3F2; --brand-soft:#1B3A4C;
+  --text:#E8EEF3; --muted:#A2B3C0; --line:#25414F; --on-brand:#06202D; --shadow:0 10px 30px rgba(0,0,0,.35);
+  color-scheme:dark;
+}
+*,*::before,*::after{box-sizing:inherit}
+html{scroll-behavior:smooth;scroll-padding-top:calc(var(--safe-top) + 76px)}
+body{margin:0;background:var(--bg);color:var(--text);font-family:Inter,Roboto,"Segoe UI",system-ui,-apple-system,Arial,sans-serif;line-height:1.6;-webkit-font-smoothing:antialiased}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);background:var(--bg);z-index:30}
+a{color:inherit;text-decoration:none}
+:focus-visible{outline:3px solid var(--brand-2);outline-offset:3px;border-radius:8px}
+.wrap{max-width:1080px;margin:0 auto;padding:0 20px}
+h1,h2,h3,p{margin:0}
+h2{font-size:clamp(1.6rem,3.2vw,2.2rem);font-weight:700;letter-spacing:-.01em;line-height:1.2;margin-bottom:32px}
+
+/* Header */
+header{position:sticky;top:env(safe-area-inset-top,0px);z-index:20;background:color-mix(in srgb,var(--bg) 90%,transparent);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+.bar{display:flex;align-items:center;justify-content:space-between;height:68px;gap:16px}
+.logo{display:flex;align-items:center;gap:10px;font-weight:700;font-size:1.15rem}
+.logo svg{width:30px;height:30px;fill:var(--brand)}
+nav{display:flex;align-items:center;gap:28px}
+nav a.link{color:var(--muted);font-weight:500;font-size:.97rem;transition:color .2s}
+nav a.link:hover{color:var(--brand)}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;padding:12px 22px;border-radius:12px;font-weight:600;font-size:.97rem;background:var(--brand);color:var(--on-brand);border:2px solid var(--brand);transition:transform .2s,box-shadow .2s,background .2s}
+.btn:hover{transform:translateY(-2px);box-shadow:var(--shadow);background:var(--brand-2);border-color:var(--brand-2)}
+.btn.ghost{background:transparent;color:var(--brand)}
+.btn.ghost:hover{background:var(--brand-soft);box-shadow:none}
+.btn.sm{padding:10px 18px}
+
+/* Hero */
+.hero{padding:72px 0 88px;background:linear-gradient(180deg,var(--bg-alt),var(--bg))}
+.hero .wrap{display:grid;grid-template-columns:1.15fr .85fr;gap:48px;align-items:center}
+.hero h1{font-size:clamp(2.1rem,5vw,3.5rem);font-weight:800;line-height:1.1;letter-spacing:-.025em;margin-bottom:20px;max-width:14ch}
+.hero p{font-size:1.15rem;color:var(--muted);max-width:46ch;margin-bottom:32px}
+.hero .btn{padding:15px 30px;font-size:1.05rem}
+.art{justify-self:center;width:min(100%,340px);aspect-ratio:1;border-radius:50%;background:var(--brand-soft);display:grid;place-items:center;position:relative}
+.art svg{width:56%;fill:var(--card);stroke:var(--brand);stroke-width:2.2;stroke-linejoin:round;filter:drop-shadow(0 12px 18px rgba(0,119,182,.18))}
+.art .tag{position:absolute;bottom:8%;right:-4%;background:var(--card);border:1px solid var(--line);border-radius:14px;padding:10px 16px;font-weight:600;font-size:.9rem;box-shadow:var(--shadow)}
+
+/* Sections */
+section.block{padding:84px 0}
+section.alt{background:var(--bg-alt)}
+.card{background:var(--card);border:1px solid var(--line);border-radius:20px;padding:32px;box-shadow:var(--shadow);transition:transform .25s,box-shadow .25s}
+.card:hover{transform:translateY(-4px);box-shadow:0 16px 36px rgba(0,119,182,.16)}
+.ico{width:52px;height:52px;border-radius:14px;background:var(--brand-soft);display:grid;place-items:center;margin-bottom:18px}
+.ico svg{width:26px;height:26px;fill:none;stroke:var(--brand);stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+
+/* Contacts */
+.contact{max-width:620px;margin:0 auto;text-align:center}
+.contact .ico{margin:0 auto 18px}
+.phone{display:inline-block;font-size:clamp(1.7rem,5vw,2.4rem);font-weight:800;color:var(--brand);letter-spacing:-.01em;margin-bottom:10px}
+.status{display:inline-flex;align-items:center;gap:10px;color:var(--muted);font-style:italic;margin-bottom:26px}
+.dot{width:10px;height:10px;border-radius:50%;background:#2BB673;box-shadow:0 0 0 4px rgba(43,182,115,.2)}
+.msgs{display:flex;gap:12px;justify-content:center;flex-wrap:wrap}
+
+/* Reviews */
+.grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+.quote{width:34px;height:34px;fill:var(--brand-soft);margin-bottom:6px}
+.stars{color:var(--star);font-size:1.25rem;letter-spacing:2px;margin-bottom:12px}
+.stars .off{color:var(--line)}
+.review p{font-size:1.08rem;margin-bottom:18px}
+.review b{font-weight:700}
+
+/* Address */
+.grid2{display:grid;grid-template-columns:1fr 1fr;gap:24px}
+.card h3{font-size:1.1rem;font-weight:700;margin-bottom:6px}
+.card p{color:var(--muted)}
+.card p strong{color:var(--text);font-weight:600}
+.map{margin-top:24px;min-height:220px;border-radius:20px;border:2px dashed var(--line);display:grid;place-items:center;text-align:center;color:var(--muted);padding:24px;background:var(--card)}
+
+footer{padding:36px 0 44px;border-top:1px solid var(--line);color:var(--muted);font-size:.95rem}
+footer .wrap{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
+footer strong{color:var(--text)}
+
+@media (max-width:820px){
+  .hero{padding:44px 0 56px}
+  .hero .wrap{grid-template-columns:1fr;gap:36px}
+  .art{width:min(70%,260px);order:-1;justify-self:start}
+  .grid3,.grid2{grid-template-columns:1fr}
+  section.block{padding:56px 0}
+}
+@media (max-width:640px){
+  nav a.link{display:none}
+  .logo{font-size:1.05rem}
+}
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  *{transition:none!important}
+}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap bar">
+    <a class="logo" href="#top" aria-label="Чистый зуб — на главную">
+      <svg viewBox="0 0 64 66" aria-hidden="true"><path d="M32 10C26 5 14 4 11 16C9 24 14 32 15 40C16 50 16 60 21 60C26 60 26 46 32 46C38 46 38 60 43 60C48 60 48 50 49 40C50 32 55 24 53 16C50 4 38 5 32 10Z"/></svg>
+      Чистый зуб
+    </a>
+    <nav aria-label="Разделы сайта">
+      <a class="link" href="#contacts">Контакты</a>
+      <a class="link" href="#reviews">Отзывы</a>
+      <a class="link" href="#address">Адрес</a>
+      <a class="btn sm" href="#contacts">Записаться на прием</a>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+  <section class="hero">
+    <div class="wrap">
+      <div>
+        <h1>Здоровая и красивая улыбка в Бишкеке</h1>
+        <p>Профессиональное лечение зубов без боли и стресса. Современное оборудование и опытные врачи.</p>
+        <a class="btn" href="#contacts">Связаться с нами</a>
+      </div>
+      <div class="art" aria-hidden="true">
+        <svg viewBox="0 0 64 66"><path d="M32 10C26 5 14 4 11 16C9 24 14 32 15 40C16 50 16 60 21 60C26 60 26 46 32 46C38 46 38 60 43 60C48 60 48 50 49 40C50 32 55 24 53 16C50 4 38 5 32 10Z"/></svg>
+        <span class="tag">Без боли и стресса</span>
+      </div>
+    </div>
+  </section>
+
+  <section class="block" id="contacts">
+    <div class="wrap">
+      <div class="card contact">
+        <div class="ico"><svg viewBox="0 0 24 24"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z"/></svg></div>
+        <h2 style="margin-bottom:14px">Свяжитесь с нами</h2>
+        <a class="phone" href="tel:+996707327854">+996 707 327 854</a>
+        <p class="status"><span class="dot" aria-hidden="true"></span>Пишите и звоните в любое время!</p>
+        <div class="msgs">
+          <a class="btn" href="https://wa.me/996707327854" target="_blank" rel="noopener">WhatsApp</a>
+          <a class="btn ghost" href="https://t.me/+996707327854" target="_blank" rel="noopener">Telegram</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="block alt" id="reviews">
+    <div class="wrap">
+      <h2>Что говорят наши пациенты</h2>
+      <div class="grid3">
+        <article class="card review">
+          <svg class="quote" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 21c0-7 2-12 7-14l1 2c-3 1.500-4 4-4 6h4v6H3zm10 0c0-7 2-12 7-14l1 2c-3 1.500-4 4-4 6h4v6h-8z"/></svg>
+          <div class="stars" role="img" aria-label="5 из 5">★★★★★</div>
+          <p>«Хорошие врачи!»</p>
+          <b>Людмила</b>
+        </article>
+        <article class="card review">
+          <svg class="quote" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 21c0-7 2-12 7-14l1 2c-3 1.500-4 4-4 6h4v6H3zm10 0c0-7 2-12 7-14l1 2c-3 1.500-4 4-4 6h4v6h-8z"/></svg>
+          <div class="stars" role="img" aria-label="5 из 5">★★★★★</div>
+          <p>«Очень быстрая процедура»</p>
+          <b>Арсен</b>
+        </article>
+        <article class="card review">
+          <svg class="quote" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 21c0-7 2-12 7-14l1 2c-3 1.500-4 4-4 6h4v6H3zm10 0c0-7 2-12 7-14l1 2c-3 1.500-4 4-4 6h4v6h-8z"/></svg>
+          <div class="stars" role="img" aria-label="4 из 5">★★★★<span class="off">★</span></div>
+          <p>«Нормально так»</p>
+          <b>Владимир</b>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="block" id="address">
+    <div class="wrap">
+      <h2>Где мы находимся</h2>
+      <div class="grid2">
+        <div class="card">
+          <div class="ico"><svg viewBox="0 0 24 24"><path d="M12 22s7-6.300 7-12a7 7 0 0 0-14 0c0 5.700 7 12 7 12z"/><circle cx="12" cy="10" r="2.500"/></svg></div>
+          <h3>Адрес</h3>
+          <p><strong>г. Бишкек, ул. Гражданская 76, дом 34</strong></p>
+        </div>
+        <div class="card">
+          <div class="ico"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg></div>
+          <h3>Режим работы</h3>
+          <p><strong>Рабочие часы: 6:00 – 23:00</strong><br>Без выходных</p>
+        </div>
+      </div>
+      <div class="map" role="img" aria-label="Место для карты">Здесь можно разместить карту Google Maps или 2ГИС</div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <span>Стоматология <strong>«Чистый зуб»</strong></span>
+    <span>Все права защищены, Бишкек</span>
+  </div>
+</footer>
+
+</body>
+</html>
